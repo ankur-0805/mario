@@ -17,7 +17,9 @@
 		<!-- <requires-extension name="cms"/> -->
 
 		<requires-extension name="backoffice"/>
-		
+			<requires-extension name="warehousingbackoffice"/>
+		<requires-extension name="platformbackoffice"/>
+		<requires-extension name="customersupportbackoffice"/>
 
 		<coremodule generated="true" manager="com.mario.jalo.MariobackofficeManager" packageroot="com.mario"/>
 

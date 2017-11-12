@@ -18,5 +18,45 @@
 	<!--<context component="component-code" module="mariobackoffice">-->
 		<!--Please check documentation for code snippets for specific components-->
 	<!--</context>-->
+	
+	
+	<context component="cseditorareaactions" type="Order" merge-by="type">
+		<y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+			<y:group qualifier="common">
+				<y:label>actiongroup.common</y:label>
+				<y:action action-id="com.mario.ordermanagementbackoffice.actions.returns.createreturnrequestaction" property="currentObject" />
+				<y:action action-id="de.hybris.ordermanagementbackoffice.actions.returns.createreturnrequestaction" property="currentObject" merge-mode="remove" />
+			</y:group>
+		</y:actions>
+	</context>
+	
+	  <context merge-by="type" parent="GenericItem" type="OrderEntry" component="referenceListViewOrderEntries">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+        
+        	<list-view:column qualifier="product.code" label="customersupportbackoffice.order.hierarchy.productcode" merge-mode="remove"/>
+			<list-view:column qualifier="product.name" label="customersupportbackoffice.order.hierarchy.productname" merge-mode="remove"/>
+			<list-view:column qualifier="currency"  spring-bean="currencyTypeRenderer"  label="customersupportbackoffice.order.hierarchy.currency" merge-mode="remove"/>
+			<list-view:column qualifier="basePrice" label="customersupportbackoffice.order.hierarchy.itemprice" merge-mode="remove"/>
+			<list-view:column qualifier="quantity" label="customersupportbackoffice.order.hierarchy.qty" merge-mode="remove"/>
+			<list-view:column qualifier="totalPrice" label="customersupportbackoffice.order.hierarchy.totalprice" merge-mode="remove"/>
+			<list-view:column qualifier="quantityAllocated" label="customersupportbackoffice.order.hierarchy.allocated"  merge-mode="remove"/>
+			<list-view:column qualifier="quantityPending" label="customersupportbackoffice.order.hierarchy.pending" merge-mode="remove"/>
+			<list-view:column qualifier="quantityReturned" label="customersupportbackoffice.order.hierarchy.returned" merge-mode="remove"/>
+			<list-view:column qualifier="quantityCancelled" label="customersupportbackoffice.order.hierarchy.cancelled" merge-mode="remove"/>
+			<list-view:column qualifier="quantityShipped" label="customersupportbackoffice.order.hierarchy.shipped" merge-mode="remove"/>
+			 <list-view:column qualifier="product.code" label="customersupportbackoffice.order.hierarchy.productcode" />
+			<list-view:column qualifier="product.name" label="customersupportbackoffice.order.hierarchy.productname" />
+			<list-view:column qualifier="currency"  spring-bean="currencyTypeRenderer"  label="customersupportbackoffice.order.hierarchy.currency" />
+			<list-view:column qualifier="basePrice" label="customersupportbackoffice.order.hierarchy.itemprice" />
+			<list-view:column qualifier="quantity" label="customersupportbackoffice.order.hierarchy.qty" />
+			<list-view:column qualifier="originalSubscriptionId" label="Used Qty" />
+			<list-view:column qualifier="totalPrice" label="customersupportbackoffice.order.hierarchy.totalprice" />
+			<list-view:column qualifier="quantityAllocated" label="customersupportbackoffice.order.hierarchy.allocated"  />
+			<list-view:column qualifier="quantityPending" label="customersupportbackoffice.order.hierarchy.pending" />
+			<list-view:column qualifier="quantityReturned" label="customersupportbackoffice.order.hierarchy.returned" />
+			<list-view:column qualifier="quantityCancelled" label="customersupportbackoffice.order.hierarchy.cancelled" />
+			<list-view:column qualifier="quantityShipped" label="customersupportbackoffice.order.hierarchy.shipped" />
+        </list-view:list-view>
+    </context>
 
 </config>

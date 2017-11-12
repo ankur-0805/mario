@@ -31,5 +31,6 @@
     <widget-connection sourceWidgetId="mariobackoffice-search-disabler" outputId="genericOutput" targetWidgetId="mariobackoffice-text-search" inputId="enabled"/>
     <widget-connection sourceWidgetId="mariobackoffice-text-search" outputId="query" targetWidgetId="mariobackoffice-search-logic" inputId="searchtext"/>
     <widget-connection sourceWidgetId="mariobackoffice-search-logic" outputId="pageable" targetWidgetId="mariobackoffice-simple-list" inputId="pageable"/>
-
+	<widget-connection sourceWidgetId="STUB_com.mario.ordermanagementbackoffice.actions.returns.createreturnrequestaction" outputId="createReturnRequestContext" targetWidgetId="omsCreateReturnRequestPopup"
+		inputId="inputObject" />
 </widgets>
