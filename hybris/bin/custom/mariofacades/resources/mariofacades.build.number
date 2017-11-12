@@ -1,0 +1,9 @@
+#Ant properties
+#Tue Aug 08 11:04:22 CEST 2017
+builddate=20170808 1103
+description=mariofacades
+name=mariofacades
+releasedate=20160923 1341
+vendor=hybris
+version=6.2.0.11
+version.api=6.2.0
