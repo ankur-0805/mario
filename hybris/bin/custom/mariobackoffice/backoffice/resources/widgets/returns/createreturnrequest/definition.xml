@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<widget-definition id="com.mario.ordermanagementbackoffice.widgets.createreturnrequest"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widget-definition.xsd">
+
+    <name>Create Return Request</name>
+    <description>Create Return Request widget.</description>
+    <defaultTitle>Create Return Request</defaultTitle>
+    <author>Mario</author>
+    <version>0.1</version>
+	<view src="mariocreatereturnrequest.zul" />
+    <sockets>
+        <input type="de.hybris.platform.core.model.order.OrderModel" id="inputObject"/>
+        <output type="java.lang.String" id="confirm"/>
+    </sockets>
+
+    <keywords>
+        <keyword>Create Return Request</keyword>
+    </keywords>
+
+    <controller class="com.mario.backoffice.widgets.order.createreturnrequest.MarioCreateReturnRequestController"/>
+
+</widget-definition>
