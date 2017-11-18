@@ -1,0 +1,184 @@
+.oms-widget-createreturnrequest-configuration {
+    overflow: auto;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.oms-widget-createreturnrequest-configuration-container {
+    float: right;
+    margin-right: 80px;
+    min-height: 200px;
+}
+
+.oms-widget-createreturnrequest-list-container {
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 15px;
+	padding-top: 10px;
+	border-color: transparent !important;
+}
+
+.oms-widget-createreturnrequest-configuration-button-container {
+    float: right;
+    display: block;
+    margin-right: 10px;
+}
+
+.oms-widget-createreturnrequest-configuration-main-container .oms-widget-createreturnrequest-configuration-container {
+    border: 1px solid #CACACA;
+    margin: 0 30px;
+    padding-top: 10px;
+}
+
+.oms-widget-createreturnrequest-configuration-button {
+    height: 32px !important;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.oms-widget-createreturnrequest-configuration-save-button {
+    background-color: #085ABC !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
+}
+
+div.oms-widget-createreturnrequest-configuration div.oms-widget-createreturnrequest-configuration-button-container button.oms-widget-createreturnrequest-configuration-save-button:hover {
+    background-color: #6282B9 !important;
+}
+
+.oms-widget-createreturnrequest-configuration-save-button[disabled="disabled"] {
+    background: #6F7C91 !important;
+    color: #ffffff !important;
+    cursor: default;
+}
+
+.oms-widget-createreturnrequest-configuration-save-button[disabled="disabled"]:hover {
+    background-color: #6282B9 !important;
+    color: #ffffff !important;
+    cursor: default;
+}
+
+.oms-widget-createreturnrequest-configuration-revert-button {
+    background-color: #6F7C91 !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
+}
+
+.oms-widget-createreturnrequest-configuration-revert-button:hover {
+    background-color: #6282B9 !important;
+}
+
+.oms-widget-createreturnrequest-configuration-revert-button[disabled="disabled"] {
+    background: #6F7C91 !important;
+    color: #ffffff !important;
+    cursor: default;
+}
+
+.oms-widget-createreturnrequest-configuration-revert-button[disabled="disabled"]:hover {
+    background-color: #6F7C91 !important;
+    color: #ffffff !important;
+    cursor: default;
+}
+
+.oms-widget-createreturnrequest-input-text-box {
+    width: 235px;
+    color: #303030;
+    padding-right: 0px;
+}
+
+.oms-widget-createreturnrequest-configuration .z-listitem {
+    background: #ffffff;
+}
+
+.oms-widget-createreturnrequest-configuration .z-label {
+    display: inline-block;
+    font-family: 'Roboto', Arial, sans-serif !important;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.oms-widget-createreturnrequest-listbox-header
+{
+    border-color: #6F7C91 !important;
+}
+
+.oms-widget-createreturnrequest-body {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.oms-widget-createreturnrequest-configuration div.z-listbox-header{
+    width: 900px !important;
+}
+
+.oms-widget-createreturnrequest-configuration div.z-listbox-body{
+    width: 900px !important;
+}
+
+input:disabled + label.z-checkbox-content{
+    color: #B7BDC8;
+}
+
+.oms-widget-createreturnrequest-confirm-area{
+    background-color: #f5f5f5 !important;
+    width:180px;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+/** createreturnrequest **/
+.oms-widget-createreturnrequest-list-container .z-textbox[placeholder*="Comment"]::-moz-placeholder{
+    font-style: italic;
+}
+
+.oms-widget-createreturnrequest-list-container .z-textbox[placeholder*="Comment"]:-ms-input-placeholder{
+    font-style: italic;
+}
+
+.oms-widget-createreturnrequest-list-container .z-textbox[placeholder*="Comment"]::-webkit-input-placeholder{
+    font-style: italic;
+}
+
+.oms-widget-createreturnrequest-list-container .z-grid-body tr.z-row td.z-row-inner .z-row-content input.z-intbox{
+    margin-left: 25% !important;
+}
+
+.oms-widget-createreturnrequest-list-container .z-grid-body tr.z-row td.z-row-inner:nth-child(2) .z-label,
+.oms-widget-createreturnrequest-list-container .z-grid-body tr.z-row td.z-row-inner:nth-child(5) .z-label{
+    text-align: center !important;
+}
+
+.oms-widget-createreturnrequest-list-container .oms-widget-createreturnrequest-controller-area{
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.oms-widget-createreturnrequest-configuration-button.oms-widget-createreturnrequest-configuration-revert-button{
+    float:left;
+    margin-top:20px;
+    margin-left:10px
+}
+
+.oms-widget-createreturnrequest-list-container .oms-widget-createreturnrequest-refund-amount-area{
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 19px;
+    margin-right: 40px;
+    width: 300px;
+}
+
+.oms-widget-createreturnrequest-refund-amount-area--delivery-cost{
+    float:left;
+}
+
+.oms-widget-createreturnrequest-refund-amount-area--total-refund{
+    float:right;
+}
+
+.oms-widget-createreturnrequest-refund-amount-area--total-refund-label{
+    display: block;
+}

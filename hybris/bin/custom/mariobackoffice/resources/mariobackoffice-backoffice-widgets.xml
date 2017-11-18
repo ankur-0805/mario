@@ -20,7 +20,37 @@
             <setting key="perspectiveImageUrl" value="/cng/images/perspective.png"
                 type="String" />
         </widget>
+      </widget-extension>
+        
+     <widget-extension widgetId="csCollapsibleContainer">
+        
+        
+        <remove widgetId="omsCreateReturnRequestPopup" />
+		<widget id="marioOmsCreateReturnRequestPopup" widgetDefinitionId="com.mario.ordermanagementbackoffice.widgets.createreturnrequest" slotId="cockpitWidgetChildrenInvisible" title="Mario Create Return Request"
+			template="true">
+
+			<instance-settings socketEventRoutingMode="LAST_USED">
+				<create onInit="false" reuseExisting="true">
+					<all-incoming-events />
+				</create>
+				<close>
+					<all-outgoing-events />
+				</close>
+				<select onInit="false">
+					<all-incoming-events />
+				</select>
+			</instance-settings>
+
+			<setting key="widgetStyleClass" type="String"></setting>
+			<setting key="widgetStyleAttribute" type="String"></setting>
+			<setting key="_width" type="String">1200px</setting>
+			<setting key="_height" type="String">650px</setting>
+			<virtual-sockets />
+		</widget>
+		
     </widget-extension>
+    
+    
 
     <widget-connection sourceWidgetId="mariobackoffice-explorer-tree" outputId="nodeSelected" targetWidgetId="mariobackoffice-tree-node-adapter" inputId="input"/>
     <widget-connection sourceWidgetId="mariobackoffice-tree-node-adapter" outputId="true" targetWidgetId="mariobackoffice-typecode-extractor" inputId="genericInput"/>
@@ -31,6 +61,5 @@
     <widget-connection sourceWidgetId="mariobackoffice-search-disabler" outputId="genericOutput" targetWidgetId="mariobackoffice-text-search" inputId="enabled"/>
     <widget-connection sourceWidgetId="mariobackoffice-text-search" outputId="query" targetWidgetId="mariobackoffice-search-logic" inputId="searchtext"/>
     <widget-connection sourceWidgetId="mariobackoffice-search-logic" outputId="pageable" targetWidgetId="mariobackoffice-simple-list" inputId="pageable"/>
-	<widget-connection sourceWidgetId="STUB_com.mario.ordermanagementbackoffice.actions.returns.createreturnrequestaction" outputId="createReturnRequestContext" targetWidgetId="omsCreateReturnRequestPopup"
-		inputId="inputObject" />
+	<widget-connection sourceWidgetId="STUB_com.mario.ordermanagementbackoffice.actions.returns.createreturnrequestaction" outputId="createReturnRequestContext" targetWidgetId="marioOmsCreateReturnRequestPopup" inputId="inputObject" />
 </widgets>
